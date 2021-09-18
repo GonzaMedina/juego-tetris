@@ -1,0 +1,75 @@
+<!--
+
+  ____          _____               _ _           _       
+ |  _ \        |  __ \             (_) |         | |      
+ | |_) |_   _  | |__) |_ _ _ __ _____| |__  _   _| |_ ___ 
+ |  _ <| | | | |  ___/ _` | '__|_  / | '_ \| | | | __/ _ \
+ | |_) | |_| | | |  | (_| | |   / /| | |_) | |_| | ||  __/
+ |____/ \__, | |_|   \__,_|_|  /___|_|_.__/ \__, |\__\___|
+         __/ |                               __/ |        
+        |___/                               |___/         
+    
+____________________________________
+/ Si necesitas ayuda, contáctame en \
+\ https://parzibyte.me               /
+ ------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+Creado por Parzibyte (https://parzibyte.me). Este encabezado debe mantenerse intacto,
+excepto si este es un proyecto de un estudiante.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        body {
+            padding-bottom: 70px;
+        }
+    </style>
+    <title>Tetris</title>
+</head>
+<body>
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Tetris - Gonzalo Exequiel Medina</h1>
+                <h2 id="puntaje">Presiona <kbd>P</kbd> o pulsa el botón para comenzar</h2>
+            </div>
+            <div class="col-12 text-center">
+                <canvas id="canvas"></canvas>
+                <div class="mt-2">
+                    <button id="btnIniciar" class="btn btn-success"><i class="fas fa-play"></i></button>
+                    <button hidden id="btnPausar" class="btn btn-success"><i class="fas fa-pause"></i></button>
+                    <button id="btnIzquierda" class="btn btn-success"><i class="fas fa-arrow-left"></i></button>
+                    <button id="btnAbajo" class="btn btn-success"><i class="fas fa-arrow-down"></i></button>
+                    <button id="btnDerecha" class="btn btn-success"><i class="fas fa-arrow-right"></i></button>
+                    <button id="btnRotar" class="btn btn-success"><i class="fas fa-undo"></i></button>
+                    <button class="btn btn-danger" id="reset">Reset</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+<footer class="px-2 py-2 fixed-bottom bg-dark">
+        <span class="text-muted">Tetris creado por
+            <a class="text-white" href="">Gonzalo Exequiel Medina</a>
+            &nbsp;|&nbsp;
+            <a target="_blank" class="text-white" href="https://github.com/elgonzaexe/juego-tetris.git">
+                Ver código fuente
+            </a>
+        </span>
+</footer>
+</body>
+<script src="js/sweetalert2.min.js"></script>
+<script src="js/tetris.js"></script>
+</html>
